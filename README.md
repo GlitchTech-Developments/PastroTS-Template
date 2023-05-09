@@ -25,10 +25,10 @@ pnpm run dev
 
 ## Author
 
-👤 **Jesse Koldewijn**
+👤 **GlitchTech Developments**
 
-- Website: https://jkinsight.nl
-- Github: [@JesseKoldewijn](https://github.com/JesseKoldewijn)
+- Website: https://glitchtech.eu
+- Github: [@JesseKoldewijn](https://github.com/GlitchTech-Developments)
 
 ## 🤝 Contributing
 
