@@ -1,0 +1,12 @@
+# Build output
+**/dist
+
+# Lockfiles
+pnpm-lock.yaml
+
+# Repo relates stuff
+.github
+.changeset
+
+# Node.js related module packages 
+node_modules

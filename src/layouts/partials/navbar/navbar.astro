@@ -1,0 +1,28 @@
+---
+import ThemeToggle from "./parts/themeToggleButton";
+import { MenuIcon } from "lucide-preact";
+---
+
+<nav class="w-full fixed top-0 inset-x-0 p-3 bg-stone-300 dark:bg-black border-b border-black dark:border-primary">
+	<div class="flex my-auto">
+		<div class="navbar-start flex items-center">
+			<a href="/" class="text-lg">Pastro.ts - Template</a>
+		</div>
+		<div class="navbar-end flex items-center gap-2">
+			<ThemeToggle client:only="preact" />
+			<div class="dropdown dropdown-end">
+				<label tabindex="0" class="btn btn-base-100 rounded-btn p-2"
+					><MenuIcon />
+					<div class="sr-only">Mobile navigation</div>
+				</label>
+				<ul
+					tabindex="0"
+					class="menu dropdown-content p-2 shadow bg-stone-300 dark:bg-black rounded-box border w-52 mt-6 border-black dark:border-primary"
+				>
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>

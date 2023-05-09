@@ -1,0 +1,29 @@
+---
+import Navbar from "./partials/navbar/navbar.astro";
+import MetaTags from "./utils/metaTags.astro";
+import TailwindInject from "./utils/tailwindInject.astro";
+import ThemeChangeInject from "./utils/themeChangeInject.astro";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<title>
+			{`${title ? title + " | " : ""}Pastro.ts Template - Astro.js, Preact.js, TailwindCSS & TypeScript!`}
+		</title>
+		<meta
+			name="description"
+			content={`${title ? title + " | " : ""}Pastro.ts Template - Astro.js, Preact.js, TailwindCSS & TypeScript! `}
+		/>
+		<MetaTags />
+		<TailwindInject />
+		<ThemeChangeInject />
+	</head>
+	<body>
+		<Navbar />
+		<main class="mt-10">
+			<slot />
+		</main>
+	</body>
+</html>
